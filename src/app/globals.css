@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+/* ————————————————————————————————————————————————————————————
+   Woodshed design system — the same forest-study palette as Reading
+   Cabin and Almanac (dark canopy greens, walnut wood, sage, warm
+   parchment), so every app launched from The Lodge feels like it
+   belongs to the same place.
+   ———————————————————————————————————————————————————————————— */
+
+:root {
+  --canopy-950: #10190f;
+  --canopy-900: #16221a;
+  --canopy-800: #1e2e22;
+  --canopy-700: #2a3d2c;
+
+  --moss-600: #4c6b45;
+  --moss-500: #61804f;
+  --sage-400: #8ea377;
+  --sage-300: #b2c19c;
+
+  --olive-500: #7c7442;
+
+  --walnut-900: #2a1e16;
+  --walnut-800: #3a281c;
+  --walnut-700: #513724;
+  --walnut-500: #7a5738;
+
+  --tan-400: #c9a877;
+  --tan-300: #dbc39a;
+
+  --parchment-100: #f6efe1;
+  --parchment-50: #fbf7ee;
+  --parchment-paper: #fdfbf5;
+
+  --charcoal-800: #2b2621;
+  --charcoal-600: #524a41;
+
+  --amber-500: #b1803a;
+  --clay-500: #a35d3f;
+
+  --background: var(--parchment-50);
+  --foreground: var(--charcoal-800);
+}
+
+[data-theme="walnut"] {
+  --canopy-950: #1c130b;
+  --canopy-900: #241a10;
+  --canopy-800: #2f2415;
+  --canopy-700: #3d301c;
+
+  --moss-600: #8a5a2e;
+  --moss-500: #a3703c;
+  --sage-400: #c2965c;
+  --sage-300: #d9b98c;
+
+  --olive-500: #8a6d35;
+
+  --walnut-900: #2a1e16;
+  --walnut-800: #3a281c;
+  --walnut-700: #513724;
+  --walnut-500: #7a5738;
+
+  --tan-400: #c9a877;
+  --tan-300: #dbc39a;
+
+  --parchment-100: #f2e6d0;
+  --parchment-50: #faf2e4;
+  --parchment-paper: #fdf7ec;
+
+  --charcoal-800: #2e2015;
+  --charcoal-600: #5c4632;
+
+  --amber-500: #b1803a;
+  --clay-500: #a35d3f;
+}
+
+[data-theme="lamp"] {
+  color-scheme: dark;
+
+  --canopy-950: #f3e6d3;
+  --canopy-900: #e4d4bd;
+  --canopy-800: #d0bc9d;
+  --canopy-700: #b39d7c;
+
+  --moss-600: #cf9c52;
+  --moss-500: #dbb06c;
+  --sage-400: #d9b98c;
+  --sage-300: #e8d2ab;
+
+  --olive-500: #b08a44;
+
+  --walnut-900: #2a1e16;
+  --walnut-800: #3a281c;
+  --walnut-700: #513724;
+  --walnut-500: #8a6a4c;
+
+  --tan-400: #c9a877;
+  --tan-300: #dbc39a;
+
+  --parchment-100: #2a1e14;
+  --parchment-50: #1f160f;
+  --parchment-paper: #251a11;
+
+  --charcoal-800: #ece0d0;
+  --charcoal-600: #b8a58c;
+
+  --amber-500: #cf9c52;
+  --clay-500: #c0785a;
+}
+
+[data-theme="dusk"] {
+  color-scheme: dark;
+
+  --canopy-950: #ece7da;
+  --canopy-900: #ddd6c4;
+  --canopy-800: #cfc6b0;
+  --canopy-700: #b8ac91;
+
+  --moss-600: #8fae6f;
+  --moss-500: #a3c084;
+  --sage-400: #9bb583;
+  --sage-300: #b7cca4;
+
+  --olive-500: #a3a066;
+
+  --walnut-900: #241a13;
+  --walnut-800: #2f241b;
+  --walnut-700: #423225;
+  --walnut-500: #8a6a4c;
+
+  --tan-400: #c9a877;
+  --tan-300: #dbc39a;
+
+  --parchment-100: #241d16;
+  --parchment-50: #1b1611;
+  --parchment-paper: #211a14;
+
+  --charcoal-800: #ece5d8;
+  --charcoal-600: #b8ae9c;
+
+  --amber-500: #cf9c52;
+  --clay-500: #c0785a;
+}
+
+@theme inline {
+  --font-serif: var(--font-serif), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-sans), -apple-system, "Segoe UI", sans-serif;
+
+  --color-canopy-950: var(--canopy-950);
+  --color-canopy-900: var(--canopy-900);
+  --color-canopy-800: var(--canopy-800);
+  --color-canopy-700: var(--canopy-700);
+
+  --color-moss-600: var(--moss-600);
+  --color-moss-500: var(--moss-500);
+  --color-sage-400: var(--sage-400);
+  --color-sage-300: var(--sage-300);
+
+  --color-olive-500: var(--olive-500);
+
+  --color-walnut-900: var(--walnut-900);
+  --color-walnut-800: var(--walnut-800);
+  --color-walnut-700: var(--walnut-700);
+  --color-walnut-500: var(--walnut-500);
+
+  --color-tan-400: var(--tan-400);
+  --color-tan-300: var(--tan-300);
+
+  --color-parchment-100: var(--parchment-100);
+  --color-parchment-50: var(--parchment-50);
+  --color-parchment-paper: var(--parchment-paper);
+
+  --color-charcoal-800: var(--charcoal-800);
+  --color-charcoal-600: var(--charcoal-600);
+
+  --color-amber-500: var(--amber-500);
+  --color-clay-500: var(--clay-500);
+
+  --color-parchment: var(--background);
+  --color-ink: var(--foreground);
+
+  --shadow-soft: 0 1px 2px rgba(42, 30, 22, 0.06), 0 6px 16px -8px rgba(42, 30, 22, 0.18);
+  --shadow-lifted: 0 4px 10px rgba(42, 30, 22, 0.08), 0 16px 32px -12px rgba(42, 30, 22, 0.22);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.paper-grain {
+  position: relative;
+}
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 0.16  0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0.02 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+::selection {
+  background: var(--sage-300);
+  color: var(--canopy-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--moss-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.leaf-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--tan-400) 15%,
+    var(--tan-400) 85%,
+    transparent
+  );
+  opacity: 0.6;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+.pulse-soft {
+  animation: pulse-soft 1.6s ease-in-out infinite;
+}
